@@ -1,0 +1,52 @@
+.Item {
+  border-radius: 0.5em;
+  background-color: #eee;
+  padding: 0.5em 0.75em;
+  margin-bottom: 0.25em;
+  display: flex;
+  justify-content: space-between;
+  animation: fadeIn 0.5s;
+
+  &.done {
+    background-color: #f6f6f6;
+    color: #aaa;
+    text-decoration: line-through;
+  }
+
+  button {
+    padding: 0.4em 0.8em;
+    border-radius: 0.4em;
+    border: none;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &.done {
+      background-color: green;
+    }
+
+    &.delete {
+      background-color: indianred;
+      margin-left: 0.25em;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:disabled {
+      background-color: grey;
+      opacity: 0.5 !important;
+      cursor: unset;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

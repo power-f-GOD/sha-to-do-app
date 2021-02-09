@@ -1,0 +1,185 @@
+//You may append your own styles to the following CSSbut not modify it, but modify only if you need to or should
+
+@import 'constants';
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  color: #111;
+  background-color: #eee;
+  font-family: 'Montserrat', 'Trebuchet MS', sans-serif;
+  line-height: 1.8rem;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+body {
+  padding: 0 !important;
+
+  &.desktop.is-pc {
+    &.custom-scroll-bar,
+    .custom-scroll-bar,
+    .MuiDrawer-paper {
+      &::-webkit-scrollbar {
+        width: 0.5em;
+        height: 0.5em;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 0.5em;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba($prim-r, $prim-g, $prim-b, 0.75) !important;
+        border-radius: 0.5em;
+      }
+    }
+  }
+}
+
+input {
+  margin: 1em 0;
+
+  font: {
+    family: inherit;
+    size: inherit;
+  }
+}
+
+a {
+  color: $theme-primary-v5;
+
+  &:hover,
+  &:focus {
+    color: $theme-primary-v2;
+    text-decoration: underline;
+  }
+}
+
+button,
+a {
+  text-transform: unset !important;
+  font-size: 1rem;
+  transition: 0.3s !important;
+  cursor: pointer;
+}
+
+hr {
+  margin: 1.25rem 0;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+  border: none;
+  background: $theme-primary;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Montserrat', 'Trebuchet MS', sans-serif !important;
+  line-height: 150%;
+
+  * {
+    font-size: inherit;
+    font-family: 'Montserrat', 'Trebuchet MS', sans-serif !important;
+  }
+}
+
+h1 {
+  font-size: 3.1rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.container,
+.row,
+.col {
+  margin: unset;
+  padding: 0;
+  padding-right: 0;
+  padding-left: 0;
+  max-width: unset;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.w-auto {
+  width: auto !important;
+}
+
+.text-ellipsis {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.theme-color-text {
+  color: $theme-primary-v4;
+}
+.theme-color-text-lightest {
+  color: $theme-primary-v9;
+}
+
+.theme-color-bg {
+  background-color: $theme-primary;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-shadow {
+  text-shadow: 0.0625rem 0.0625rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}

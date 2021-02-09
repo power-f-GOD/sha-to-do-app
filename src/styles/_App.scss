@@ -1,0 +1,23 @@
+.App {
+  // border: 0.0625em solid grey;
+  // border-radius: 1.5rem;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.15);
+  padding: 1.25em;
+  background-color: white;
+  margin: auto;
+  min-height: 100vh;
+  max-width: 35rem;
+
+  @media screen and (max-width: 767px) {
+    min-height: 100vh;
+    max-width: 100vw;
+    margin-left: unset;
+    margin-top: unset;
+    border-radius: unset;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}

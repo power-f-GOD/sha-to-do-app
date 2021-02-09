@@ -1,0 +1,36 @@
+.Input {
+  text-align: right;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  padding: 0.5em 0;
+
+  input {
+    padding: 0.5em;
+    border-radius: 0;
+    border: none;
+    width: 100%;
+    border-bottom: 0.125em solid #eee;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: cadetblue;
+    }
+  }
+
+  button {
+    padding: 0.5em 0.8em;
+    border-radius: 0.4em;
+    border: none;
+    background-color: rgb(35, 131, 134);
+    color: white;
+    opacity: 0.8;
+    margin-left: 0.25em;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
